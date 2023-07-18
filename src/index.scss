@@ -1,0 +1,17 @@
+$font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$code-font-stack: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+@mixin antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  @include antialiased;
+}
+
+code {
+  font-family: $code-font-stack;
+}
